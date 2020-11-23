@@ -4,7 +4,7 @@
 Download Shanghaitech dataset from [here](https://github.com/desenzhou/ShanghaiTechDataset).
 Download UCF-QNRF dataset from [here](http://crcv.ucf.edu/data/ucf-qnrf/).
 
-Place the dataset in `../dataset/` folder. (`dataset` and `css-cnn` folders should have the same parent directory). So the directory structure should look like the following:
+Place the dataset in `../dataset/` folder. (`dataset` and `bsdr` folders should have the same parent directory). So the directory structure should look like the following:
 
 ```
 -- bsdr
@@ -47,22 +47,28 @@ The pretrained models can be downloaded from [here](https://drive.google.com/dri
 
 ```
 -- parta
-   -- models_stage_1
-     -- unsup_vgg_best_model_meta.pkl
-     -- stage1_epoch_parta.pth
-   -- models_stage_2
-     -- stage2_epoch_parta_cssccnn.pth
-     -- stage2_epoch_parta_cssccnn.pth
+   -- models_rot_net
+     -- best_model.pkl
+     -- rot_net_parta.pth
+   -- models_NRN
+     -- NRN_sparse_parta.pth
+     -- NRN_dense_parta.pth
+     -- best_model.pkl
+   -- models_BSDR
+     -- BSDR_parta.pth
+     
 -- ucfqnrf
-   -- models_stage_1
+   -- models_rot_net
      -- ...
-   -- models_stage_2
+   -- models_NRN
+     -- ...
+   -- models_BSDR
      -- ...
 ```
 
 * For testing the BSDR pretrained models, save the pretrained weights files from `{dataset}/models_BSDR` in `models_BSDR/train2/snapshots/` and follow the steps outlined in Testing section.
 
-* For training only BSDR using self supervision pretrained model, save the pretrained weights files from `{dataset}/models_rot_net` in `models_rot_net/train2/snapshots/` and follow steps for BSDR training.
+* For training only BSDR using self supervision pretrained model and NRN pretrained model, save the pretrained weights files from `{dataset}/models_rot_net` in `models_rot_net/train2/snapshots/` , and files from `{dataset}/models_NRN` in `models_NRN/train2/snapshots/` and follow steps for BSDR training.
 
 ## Testing
 
