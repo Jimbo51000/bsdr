@@ -46,7 +46,7 @@ The code has been run and tested on `Python 3.6.4`, `Cuda 9.0, V9.0.176` and `Py
 The pretrained models can be downloaded from [here](https://drive.google.com/drive/folders/1KhAzNrOvyN5oiFUePfnzibjY3w_6DML6?usp=sharing). The directory structure is as follows:
 
 ```
--- parta
+-- parta_models
    -- models_rot_net
      -- best_model.pkl
      -- rot_net_parta.pth
@@ -57,7 +57,7 @@ The pretrained models can be downloaded from [here](https://drive.google.com/dri
    -- models_BSDR
      -- BSDR_parta.pth
      
--- ucfqnrf
+-- ucfqnrf_models
    -- models_rot_net
      -- ...
    -- models_NRN
