@@ -106,5 +106,5 @@ After downloading the datasets and installing all dependencies, proceed with tra
   --gpu = GPU Number
   --count-thresh = count density threshold to categorise the training images as sparse or dense
   --use-noisygt = if used used the rectified density map or else the actual ground truth density map as target map
-  --epochs = number of training epochs [For ucfqnrf , set 200]
+  --epochs = number of training epochs [For ucfqnrf , set 100]
 ```
