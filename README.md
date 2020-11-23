@@ -105,6 +105,6 @@ After downloading the datasets and installing all dependencies, proceed with tra
   --dataset = parta / ucfqnrf
   --gpu = GPU Number
   --count-thresh = count density threshold to categorise the training images as sparse or dense
-  --use-noisygt = if used used the rectified density map or else the actual ground truth density map as target map
+  --use-noisygt = if True the rectified density map is the target map or else the actual ground truth density map
   --epochs = number of training epochs [For ucfqnrf , set 100]
 ```
