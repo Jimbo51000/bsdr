@@ -1,4 +1,4 @@
-# Dense or Sparse: Crowd Counting using Binary Supervision
+# Dense or Sparse: Crowd Counting using Binary Supervision 
 
 # Dataset Requirements
 Download Shanghaitech dataset from [here](https://github.com/desenzhou/ShanghaiTechDataset).
