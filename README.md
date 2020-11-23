@@ -75,10 +75,10 @@ The pretrained models can be downloaded from [here](https://drive.google.com/dri
 After either finishing the training or downloading pretrained models, the model can be tested using the below script.
 The model must be present in `models_BSDR/train2/snapshots`.
 
-* `python test_model.py --best_model_name BSDR_parta.pth --dataset parta`
+* `python test_model.py --dataset parta --gpu=0 --model-name BSDR_parta.pth `
 ```
 --dataset = parta / ucfqnrf
---best_model_name = Name of the model checkpoint to be tested
+--model-name = Name of the model checkpoint to be tested
 ```
 
 ## Training
