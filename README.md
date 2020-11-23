@@ -100,10 +100,11 @@ After downloading the datasets and installing all dependencies, proceed with tra
   --count-thresh = count density threshold to categorise the training images as sparse or dense
 ```
 ### BSDR Training:
-* `python main_train_BSDR.py --dataset parta --gpu 0 --count-thresh=1250 --use-noisygt`
+* `python main_train_BSDR.py --dataset parta --gpu 0 --count-thresh=1250 --use-noisygt --epochs=500`
 ```
   --dataset = parta / ucfqnrf
   --gpu = GPU Number
   --count-thresh = count density threshold to categorise the training images as sparse or dense
   --use-noisygt = if used used the rectified density map or else the actual ground truth density map as target map
+  --epochs = number of training epochs [For ucfqnrf , set 200]
 ```
