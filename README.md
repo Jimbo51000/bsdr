@@ -43,7 +43,7 @@ The code has been run and tested on `Python 3.6.4`, `Cuda 9.0, V9.0.176` and `Py
 
 ## Pretrained Models
 
-The pretrained models can be downloaded from [here](https://drive.google.com/drive/folders/1KhAzNrOvyN5oiFUePfnzibjY3w_6DML6?usp=sharing). The directory structure is as follows:
+The pretrained models can be downloaded from [here](https://drive.google.com/drive/folders/1ND1I3d2r0ny5YRWYc4GMQKifntXCDPJg?usp=sharing). The directory structure is as follows:
 
 ```
 -- parta_models
