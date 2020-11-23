@@ -215,11 +215,9 @@ def train_network():
     """
     network = BSDR_Net()
     nrn_networks = []
-    nrnmodels_folder = 'models_NRN'
-    nrn_snapshot_path = nrnmodels_folder+'/train2/snapshots'
-    best_epochs = open(os.path.join(nrn_snapshot_path,'best_model.pkl'),'rb')
-    best_epochs = pickle.load(best_epochs)
-    nrn_models_list = ['NRN_{}_epoch_{}.pth'.format(i,best_epochs[i]+1) for i in range(num_density_categories)]
+    nrn_snapshot_path = 'models_NRN/train2/snapshots'
+    nrn_models_list = pickle.load(open(os.path.join(nrn_snapshot_path,'best_model.pkl'),'rb'))
+
     before_nrn_sum = []
     # bp()
     for i in range(num_density_categories):

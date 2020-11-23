@@ -270,8 +270,9 @@ def train_network():
             plt.close()
 
     min_train_epochs = np.argmin(np.array(all_train_epochs_loss),axis=0)
+    nrn_models_list = ['NRN_{}_epoch_{}.pth'.format(i,min_train_epochs[i]+1) for i in range(num_density_categories)]
     with open(os.path.join(snapshot_path, 'best_model.pkl'), 'wb') as file:
-        pickle.dump(min_train_epochs , file, protocol=2)
+        pickle.dump(nrn_models_list , file, protocol=2)
     log(f, 'Exiting train...')
     f.close()
     return
